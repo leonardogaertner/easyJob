@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Empresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Easy Job</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Dados da Empresa</h2>
+            <form id="empresaForm">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ" required>
+
+                <label for="telefoneEmpresa">Telefone</label>
+                <input type="tel" id="telefoneEmpresa" name="telefoneEmpresa" placeholder="Digite o telefone" required>
+
+                <label for="setorEmpresa">Setor</label>
+                <input type="text" id="setorEmpresa" name="setorEmpresa" placeholder="Sertor de atuação" required>
+
+                <label for="cidadeEmpresa">Cidade</label>
+                <input type="text" id="cidadeEmpresa" name="cidadeEmpresa" placeholder="Cidade" required>
+
+                <label for="extraEmpresa">Outras informações</label>
+                <input type="tel" id="extraEmpresa" name="extraEmpresa" placeholder="Fale mais sobre sua empresa" required>
+
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Easy Job</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

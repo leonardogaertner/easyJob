@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Job - Perfil da Empresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Easy Job</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Perfil da Empresa</h2>
+            <p>Bem-vindo, <strong>Nome da Empresa</strong>!</p>
+            <hr>
+            <h3>Criar Nova Vaga</h3>
+            <form id="vagaForm">
+                <label for="tituloVaga">Título da Vaga:</label>
+                <input type="text" id="tituloVaga" placeholder="Digite o título da vaga" required>
+
+                <label for="descricaoVaga">Descrição:</label>
+                <textarea id="descricaoVaga" rows="5" placeholder="Descreva a vaga" required></textarea>
+
+                <label for="salarioVaga">Salário:</label>
+                <input type="number" id="salarioVaga" placeholder="Informe o salário" required>
+
+                <label for="localVaga">Local:</label>
+                <input type="text" id="localVaga" placeholder="Digite o local da vaga" required>
+
+                <button type="submit">Criar Vaga</button>
+            </form>
+        </div>
+        <div class="vaga-list">
+            <h3>Vagas Criadas</h3>
+            <ul id="listaVagas"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Easy Job. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
